@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mim | Henrique Rebouças</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+p {
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+.destaque {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sobre mim</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">Início</a></li>
+        <li><a href="sobre_mim.html" class="ativo">Sobre mim</a></li>
+        <li><a href="vida_academica.html">Vida Acadêmica</a></li>
+        <li><a href="experiencia_profissional.html">Experiência</a></li>
+        <li><a href="gostos_interesses.html">Interesses</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="card">
+        <p>
+            Tenho <span class="destaque">17 anos</span> e moro em São José dos Campos (SP).
+            Sou movido pela curiosidade de entender como as coisas funcionam por trás das telas.
+        </p>
+
+        <p>
+            Desde pequeno gosto de montar e desmontar dispositivos, e hoje transformo essa curiosidade em
+            <span class="destaque">código</span>.
+        </p>
+
+        <p>
+            Meu objetivo é me tornar um desenvolvedor <span class="destaque">full-stack</span>,
+            criando aplicações modernas, eficientes e acessíveis.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Henrique Rebouças</p>
+</footer>
+
+</body>
+</html>

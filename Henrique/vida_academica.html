@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida Acadêmica | Henrique Rebouças</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #020617;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #38bdf8;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background: #111827;
+}
+
+tr:hover {
+    background: #1e293b;
+}
+
+.card {
+    margin-top: 40px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.destaque {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vida Acadêmica</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">Início</a></li>
+        <li><a href="sobre_mim.html">Sobre mim</a></li>
+        <li><a href="vida_academica.html" class="ativo">Vida Acadêmica</a></li>
+        <li><a href="experiencia_profissional.html">Experiência</a></li>
+        <li><a href="gostos_interesses.html">Interesses</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <h2>Minha trajetória escolar</h2>
+
+    <table>
+        <tr>
+            <th>Etapa</th>
+            <th>Instituição</th>
+            <th>Início</th>
+            <th>Conclusão</th>
+        </tr>
+
+        <tr>
+            <td>Educação Infantil</td>
+            <td>Nei Professora Maria Ezequiel Santana</td>
+            <td>2010</td>
+            <td>2012</td>
+        </tr>
+
+        <tr>
+            <td>Ensino Fundamental</td>
+            <td>Emefi Professora Mercedes Carnevalli Klein</td>
+            <td>2020</td>
+            <td>2023</td>
+        </tr>
+
+        <tr>
+            <td><span class="destaque">Ensino Médio Técnico</span></td>
+            <td><span class="destaque">ETEC São José dos Campos</span></td>
+            <td>2024</td>
+            <td><span class="destaque">Em andamento</span></td>
+        </tr>
+    </table>
+
+    <div class="card">
+        <h3>Curso atual</h3>
+        <p>
+            Técnico em <span class="destaque">Desenvolvimento de Sistemas</span><br>
+            ETEC São José dos Campos
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Henrique Rebouças</p>
+</footer>
+
+</body>
+</html>

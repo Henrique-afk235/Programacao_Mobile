@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interesses | Henrique Rebouças</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Gostos e Interesses</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">Início</a></li>
+        <li><a href="sobre_mim.html">Sobre mim</a></li>
+        <li><a href="vida_academica.html">Vida Acadêmica</a></li>
+        <li><a href="experiencia_profissional.html">Experiência</a></li>
+        <li><a href="gostos_interesses.html" class="ativo">Interesses</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>💻 Tecnologia</h3>
+            <p>Interesse em programação, desenvolvimento de sistemas e criação de jogos.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏋️ Academia</h3>
+            <p>Pratico musculação regularmente, mantendo disciplina e foco.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Leitura</h3>
+            <p>Leitura de mangás e conteúdos relacionados à cultura e entretenimento.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎬 Filmes</h3>
+            <p>Gosto de filmes como Rambo, Rocky e Arremessando Alto.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Música</h3>
+            <p>Entre minhas favoritas estão “Tempo Perdido” e “Cigarettes out the Window”.</p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Henrique Rebouças</p>
+</footer>
+
+</body>
+</html>

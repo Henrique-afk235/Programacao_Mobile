@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiência | Henrique Rebouças</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+.projeto {
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.projeto h3 {
+    color: #38bdf8;
+}
+
+.projeto ul {
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Experiência</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">Início</a></li>
+        <li><a href="sobre_mim.html">Sobre mim</a></li>
+        <li><a href="vida_academica.html">Vida Acadêmica</a></li>
+        <li><a href="experiencia_profissional.html" class="ativo">Experiência</a></li>
+        <li><a href="gostos_interesses.html">Interesses</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <p class="intro">
+        Experiência prática adquirida durante o TCC de Desenvolvimento de Sistemas, atualmente em desenvolvimento.
+    </p>
+
+    <div class="projeto">
+        <h3>Site de Gerenciamento Financeiro Pessoal</h3>
+
+        <p>
+            Projeto em andamento como Trabalho de Conclusão de Curso (TCC) no Técnico em Desenvolvimento de Sistemas. 
+            O objetivo é criar um site que auxilie usuários a organizar suas finanças pessoais de forma prática e intuitiva.
+        </p>
+
+        <ul>
+            <li>Desenvolvimento do front-end e back-end do site</li>
+            <li>Implementação de funcionalidades para controle de receitas e despesas</li>
+            <li>Criação de relatórios simples e gráficos para análise financeira</li>
+            <li>Aplicação de boas práticas de programação e organização de código</li>
+        </ul>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Henrique Rebouças</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | Henrique Rebouças</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #cbd5f5;
+}
+
+.contact-info a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #0ea5e9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contato</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="homepage.html">Início</a></li>
+        <li><a href="sobre_mim.html">Sobre mim</a></li>
+        <li><a href="vida_academica.html">Vida Acadêmica</a></li>
+        <li><a href="experiencia_profissional.html">Experiência</a></li>
+        <li><a href="gostos_interesses.html">Interesses</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="contact-info">
+        <p><strong>E-mail:</strong> <a href="mailto:00001115467098sp@al.educacao.sp.gov.br">00001115467098sp@al.educacao.sp.gov.br</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
+        <p><strong>Cidade:</strong> São José dos Campos – SP</p>
+    </div>
+
+    <h2>Envie uma mensagem</h2>
+    <form>
+        <label>Nome:
+            <input type="text" name="nome" required>
+        </label>
+
+        <label>E-mail:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>Assunto:
+            <select name="assunto">
+                <option value="">Selecione...</option>
+                <option value="oportunidade">Oportunidade</option>
+                <option value="feedback">Feedback</option>
+                <option value="duvida">Dúvida</option>
+            </select>
+        </label>
+
+        <p>Motivo do contato:</p>
+        <label><input type="radio" name="motivo" value="estagio"> Estágio</label>
+        <label><input type="radio" name="motivo" value="parceria"> Parceria</label>
+        <label><input type="radio" name="motivo" value="outro"> Outro</label>
+
+        <br><br>
+        <input type="submit" value="Enviar mensagem">
+    </form>
+</main>
+
+<footer>
+    <p>© 2026 Henrique Rebouças</p>
+</footer>
+
+</body>
+</html>
